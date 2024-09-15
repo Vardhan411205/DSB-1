@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="./css/shirt&shoe.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">My Shop</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." id="search-bar">
+                <button id="search-btn">&#128269;</button> <!-- Search icon -->
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <div class="product-detail">
+        <div class="product-content">
+            <img id="product-image" src="./img/shoe/shoe.jpeg" alt="Product">
+            <h3>Shoe</h3>
+            <p>Price: $99.99</p>
+        </div>
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-category">
+                <h4>Color</h4>
+                <label>
+                    <input type="radio" name="color" value="white" data-image="./img/shoe/shoe.jpeg"> White
+                </label>
+                <label>
+                    <input type="radio" name="color" value="yellow" data-image="./img/shoe/yellow.jpeg"> Yellow
+                </label>
+                <label>
+                    <input type="radio" name="color" value="pink" data-image="./img/shoe/pink.jpeg"> Pink
+                </label>
+            </div>
+            <div class="filter-category">
+                <h4>Design</h4>
+                <label>
+                    <input type="radio" name="material" value="red-line" data-image="./img/shoe/red-line.jpeg"> Red-Line
+                </label>
+                <label>
+                    <input type="radio" name="material" value="Jerry" data-image="./img/shoe/jerry.jpeg"> Jerry
+                </label>
+                <label>
+                    <input type="radio" name="material" value="logo" data-image="./img/shoe/nike-logo.jpeg"> Nike-Logo
+                </label><br>
+                <label style="display: inline-flexbox;">User Design:</label>
+                    <input type="File"><br>
+                    <input type="radio" name="material" value="submit" data-image="./img/shoe/cars.jpeg" id="file">After Chosen a File Select Me!
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/shirt&shoe.js"></script>
+</body>
+</html>

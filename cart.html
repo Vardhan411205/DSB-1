@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - Almond Oil Themed E-Commerce Prototype</title>
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">My Shop</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." id="search-bar">
+                <button id="search-btn">&#128269;</button> <!-- Search icon -->
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Cart Page Content -->
+    <div class="container">
+        <h2>Your Cart</h2>
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Delivery Service</th> <!-- Shipping Column -->
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <tr>
+                    <td>
+                        <img src="./img/shoe/cars.jpeg" alt="shoe" class="product-img">
+                    </td>
+                    <td>$99.99</td>
+                    <td>1</td>
+                    <td>Free</td>
+                    <td>$99.99</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="cart-summary">
+            <p>Total Amount: <span id="total-amount">$99.99</span></p>
+            <button id="place-order-btn">Place Order</button>
+        </div>
+        <div id="order-confirmation" class="hidden">
+            <i class="fas fa-check-circle"></i> <!-- Checkmark icon -->
+            <img id="truck" style="border-radius: 50%;" src="./img/truck.jpeg" alt="Truck Icon">
+            <p id="thank-you-msg">Thank you! Your order has been placed.</p>
+        </div>
+    </div>
+
+    <script src="./js/cart.js"></script>
+</body>
+</html>

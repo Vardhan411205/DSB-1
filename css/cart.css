@@ -1,0 +1,175 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('wood-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Sticky Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    background: #FAF3E0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
+#search-bar {
+    width: 300px; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-btn {
+    padding: 8px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* Cart Page Styles */
+.container {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#cart-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#cart-table th, #cart-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+.product-img {
+    width: 50px;
+    height: auto;
+}
+
+.cart-summary {
+    text-align: right;
+    padding: 10px;
+}
+
+#place-order-btn {
+    padding: 10px 20px;
+    background-color: #8d6748;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#place-order-btn:hover {
+    background-color: #755338;
+}
+
+#order-confirmation {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+    position: relative;
+    animation: fade-in-msg 2s forwards;
+}
+
+#truck {
+    width: 100px;
+    position: absolute;
+    left: -100px; /* Initially off-screen */
+    top: 0;
+    animation: move-truck 2s ease-in-out forwards;
+}
+
+#thank-you-msg {
+    display: none;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #8d6748;
+}
+
+.fas.fa-check-circle {
+    font-size: 50px;
+    color: #28a745;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Truck moving animation */
+@keyframes move-truck {
+    from {
+        left: -100px;
+    }
+    to {
+        left: calc(50% - 50px);
+    }
+}
+
+/* Fade in the message after the truck arrives */
+@keyframes fade-in-msg {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hidden {
+    display: none;
+}

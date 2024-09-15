@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('wood-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Sticky Navigation Bar */
+header {
+    position: sticky;
+    top: 0;
+    background: #FAF3E0;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.search-container {
+    display: flex;
+    flex: 1;
+    margin: 0 20px;
+}
+
+#search-bar {
+    width: 300px; /* Adjust the width as needed */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+#search-btn {
+    padding: 8px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+/* Product Cards Section */
+.product-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card p {
+    color: #555;
+}
+
+.select-product-btn {
+    background: #ddd;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Product Detail Page Styles */
+.product-detail {
+    display: flex;
+    padding: 20px;
+}
+
+.filters {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-category {
+    margin-bottom: 20px;
+}
+
+.filter-category h4 {
+    margin: 0 0 10px;
+}
+
+.product-content {
+    flex: 3;
+    padding: 20px;
+}
+
+.product-content img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+
+.wishlist-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  .wishlist-button i {
+    color: #ff0000; /* Change the color to your preference */
+    font-size: 24px;
+  }
+
+  .wishlist-button i:hover {
+    color: #ff69b4; /* Change the hover color */
+  }

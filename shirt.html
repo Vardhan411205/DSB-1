@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+    <link rel="stylesheet" href="./css/shirt&shoe.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">My Shop</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." id="search-bar">
+                <button id="search-btn">&#128269;</button> <!-- Search icon -->
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Product Detail Section -->
+    <div class="product-detail">
+        <div class="product-content">
+            <img id="product-image" src="./img/t-shirt/t-shirt(front).jpeg" alt="Product">
+            <h3>T-Shirt</h3>
+            <p>Price: $119.99</p>
+        </div>
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-category">
+                <h4>Color</h4>
+                <label>
+                    <input type="radio" name="color" value="white" data-image="./img/t-shirt/t-shirt(front).jpeg"> White
+                </label>
+                <label>
+                    <input type="radio" name="color" value="yellow" data-image="./img/t-shirt/yellow.jpeg"> Yellow
+                </label>
+                <label>
+                    <input type="radio" name="color" value="black" data-image="./img/t-shirt/black.jpeg"> Black
+                </label>
+            </div>
+            <div class="filter-category">
+                <h4>Design</h4>
+                <label>
+                    <input type="radio" name="material" value="Dog-face" data-image="./img/t-shirt/dog-face.jpeg"> Dog Face
+                </label>
+                <label>
+                    <input type="radio" name="material" value="Jersey" data-image="./img/t-shirt/jersey.jpeg"> Jersey
+                </label>
+                <label>
+                    <input type="radio" name="material" value="logo" data-image="./img/t-shirt/g-logo.jpeg"> G-Logo
+                </label><br>
+                <label style="display: inline-flexbox;">User Design:</label>
+                    <input type="File"><br>
+                    <input type="radio" name="material" value="submit" data-image="./img/t-shirt/cars-tshirt.jpeg" id="file">After Chosen a File Select Me!
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/shirt&shoe.js"></script>
+</body>
+</html>

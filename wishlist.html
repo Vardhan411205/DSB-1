@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Almond Oil Themed E-Commerce Prototype</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <!-- Sticky Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">My Shop</div>
+            <div class="search-container">
+                <input type="text" placeholder="Search for products..." id="search-bar">
+                <button id="search-btn">&#128269;</button> <!-- Search icon -->
+            </div>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./categories.html">Categories</a></li>
+                <li><a href="#">Wishlist</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Product Cards Section -->
+        <section class="product-cards">
+            <!-- Example Product Cards -->
+            <div class="product-card" data-category="shirt">
+                <img src="./img/t-shirt/cars-tshirt.jpeg" alt="Shirt">
+                <h3>T-Shirt</h3>
+                <p>$119.99</p>
+                <a href="./shirt.html#file"><button class="select-product-btn" data-category="shoe">View Details</button></a>
+            </div>
+            <div class="product-card" data-category="shoe">
+                <img src="./img/shoe/cars.jpeg" alt="Shoe">
+                <h3>Shoe</h3>
+                <p>$99.99</p>
+                <a href="./shoe.html#file"><button class="select-product-btn" data-category="shoe">View Details</button></a>
+            </div>
+        </section>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
