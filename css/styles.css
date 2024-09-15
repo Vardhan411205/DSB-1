@@ -9,6 +9,7 @@ body {
 
 /* Sticky Navigation Bar */
 header {
+    width: auto;
     position: sticky;
     top: 0;
     background: #FAF3E0;
