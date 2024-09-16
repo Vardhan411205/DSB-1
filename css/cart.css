@@ -9,10 +9,11 @@ body {
 
 /* Sticky Navigation Bar */
 header {
+    width: auto;
     position: sticky;
     top: 0;
     background: #FAF3E0;
-    padding: 10px 20px;
+    padding: 10px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
