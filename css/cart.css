@@ -26,25 +26,26 @@ nav {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
+
 }
 
 .search-container {
     display: flex;
     flex: 1;
-    margin: 0 20px;
+    margin: 0 10px;
 }
 
 #search-bar {
-    width: 300px; /* Adjust the width as needed */
-    padding: 8px;
+    width: 50%; /* Adjust the width as needed */
+    padding: 5px;
     border: 1px solid #ccc;
     border-radius: 5px 0 0 5px;
 }
 
 #search-btn {
-    padding: 8px;
+    padding: 2px;
     background-color: #ddd;
     border: 1px solid #ccc;
     border-left: none;
@@ -56,11 +57,11 @@ ul {
     list-style: none;
     margin: 0;
     padding: 0;
-    display: flex;
+    display: inline-flex;
 }
 
 ul li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 ul li a {
